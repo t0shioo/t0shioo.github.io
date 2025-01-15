@@ -1,0 +1,767 @@
+@font-face {
+    font-family:'jackinput';
+    src: url(fontes/jackinput.TTF);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'holenvintage';
+    src: url(fontes/Holen\ Vintage.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'coolvetica';
+    src: url(fontes/coolvetica\ condensed\ rg.otf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'coolvetica-normal';
+    src: url(fontes/coolvetica\ rg.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'roboto';
+    src: url(fontes/Roboto-Black.ttf);
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'roboto-regular';
+    src: url(fontes/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+:root{
+    --preto: #202426;
+    --cinza: #343A40;
+    --amarelo: #D9A84E;
+    --bege: #D99E6A;
+    --marrom: #A67153;
+    --escuro: #15181a;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: var(--preto);
+    overflow-x: hidden;
+}
+
+.blurred{
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+header > #barra{
+    /* display: flex; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--escuro);
+    width: 100%;
+    height: 65px;
+    z-index: 10;
+    margin-top: auto;
+}
+
+
+
+header > .fundo{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    background-image: url(imagens/fundo2.jpg);
+    background-size: 1313px 715px;
+    width: 1313px;
+    height: 554px;
+    border-right: 0px;
+    margin: -20px 55px 4px -17px;    
+}
+header > picture > a > .techbrewlogo{
+    max-width: 70px;
+    display: flex;
+    margin: auto;
+    width: 150px;
+    position: fixed;
+    z-index: 10;
+    top: -4px;
+}
+
+/* titulo principal */
+header > #titulo1{
+    text-align: center;
+    position: relative;
+    color: white;
+    /* font-family: 'holenvintage'; */
+    font-family: 'roboto-regular';
+    display: block;
+    margin: 0px;
+    padding: 2px;
+    font-size: 50px;
+    letter-spacing: -3px;
+    bottom: -190px;
+}
+header > #titulo2{
+    text-align: center;
+    position: relative;
+    color: var(--marrom);
+    /* font-family: 'roboto-regular'; */
+    font-family: 'holenvintage';
+    display: block;
+    top: 171px;
+    margin: 0px;
+    padding: 2px;
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: -2px;
+}
+
+
+
+header > #barra > .links > .cabe_link{
+    text-decoration: none;
+    display: inline-block;
+    /* text-align: center; */
+    background-image: var(--bege);
+    font-family: 'coolvetica-normal';
+    position: relative;
+    /* justify-content: space-between; */
+    color: white;
+    padding: 20px;
+    margin: 25px;
+    left: 23%;
+    font-size: larger;
+    top: -35px;
+    background: 
+      linear-gradient(currentColor 0 0) 
+      0 100% /var(--d, 0) 3px 
+    no-repeat;
+    transition:0.5s;
+}
+
+/* dropdown estilo */
+
+
+/*  */
+header > #barra > .links > a:hover{
+    color: var(--bege);
+    --d: 100%
+}
+
+header > #barra > .links{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* frase digitada */
+.frase_efeito{
+    position: relative;
+    bottom: -235px;
+    /* color: white; */
+    color: white;
+    font-family: 'coolvetica-normal';
+    font-weight: lighter;
+    text-align: center;
+    margin: -60px;
+    font-size: 60px;
+    display: block;
+}
+
+.frase_efeito > h3 > span{
+    color: var(--bege);
+}
+
+header > p{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: white;
+    text-align: center;
+    border: none;
+    margin: 202px 32px 24px 35px;
+    padding: 0px 35px 0px 35px;
+}
+
+
+main{
+    padding-bottom: 2.5rem;
+    margin: auto;
+    border: 0;
+    height: 300%;
+    /* background:
+        conic-gradient(from 90deg at 1px 1px, #8800 90deg, #888F 0) center -1px / 50px 50px; */
+}
+
+
+
+
+
+main > #introducao{
+    margin: 389px 0px 34px -19px;
+    width: 99%;
+    padding: 20px;
+}
+
+#introducao > article > .proposito{
+    display: inline-block;
+    color: white;
+    font-family: 'holenvintage';
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 5px 5px 5px 5px;
+    border: 2px solid black;
+}
+
+.bloco1> {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco1 > .quemsomos{
+    display: inline-block;
+    color: white;
+    font-family: 'holenvintage';
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 40px 19px 25px 135px;
+    vertical-align: top;
+    text-shadow: -1px 6px 26px black;
+}
+
+.bloco1 > .parag1{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-family: 'roboto-regular';
+    letter-spacing: 0px;
+    font-weight: normal;
+    text-indent: 5px;
+    margin: -365px 860px 21px 135px;
+    padding: 0px;
+    height: 240px;
+    text-align: left;
+}
+
+.bloco1 > picture > .computador_cafe{
+    border-radius: 15% 5%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 601px;
+    height: 373px;
+    margin: 40px;
+    /* display: inline-block; */
+    float: right;
+    
+}
+.bloco2 > .proposito{
+    display: inline-block;
+    color: white;
+    font-family: 'holenvintage';
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 40px 19px 25px 135px;
+    vertical-align: top;
+    text-shadow: -1px 6px 26px black;
+}
+ /* t r b l */
+
+.bloco2 > .parag2{
+    display: block;
+    color: white;
+    font-family: 'roboto-regular';
+    letter-spacing: 0px;
+    font-weight: normal;
+    text-indent: 5px;
+    margin: 35px 170px 21px 810px;
+    padding: 0px;
+    height: 240px;
+    text-align: left;
+    /* border: 2px solid black; */
+}
+
+
+.bloco2 > picture > .tela{
+    max-width: 100%;
+    max-height: 100%;
+    width: 601px;
+    height: 373px;
+    margin: 40px;
+    float: left;
+    border-radius: 5% 15%;
+
+}
+
+.bloco3{
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.bloco3 > .cardapio{
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    font-weight: lighter;
+    display: inline-block;
+    color: white;
+    left: 570px;
+    top: -15px;
+    font-family: 'coolvetica-normal';
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-shadow: -1px 6px 26px black;
+    
+}
+
+
+#escolhas_bebida .imagens_bebida,
+#escolhas_comida .imagens_comida{
+    position: absolute;
+    /* bottom: -145px; */
+    justify-content: center;
+    gap: 20px;
+    align-content: center;
+    display: flex;
+    margin: 90px 10px 5px 210px;
+
+}
+
+.menu-container > #escolhas_bebida .imagens_bebida.show{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+.menu-item{
+    /* display flex aligns the items to the center */
+    position: absolute;
+    display: block;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.menu-item-wrapper{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* dentro de imagens_comida */
+.menu{
+    display: block;
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
+    margin: 0 auto;
+    max-width: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.legenda{
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: 'coolvetica-normal';
+}
+#cafe{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: -35px 5px 5px 560px;
+    width: 64px;
+    margin-bottom: 10px;
+    filter: invert(100%);
+}
+#sanduiche{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: -35px 5px 5px 690px;
+    width: 64px;
+    margin-bottom: 10px;
+    filter: invert(100%);
+}
+
+.descricaobeb{
+    margin: 12px 5px 5px 535px;
+    font-family: 'coolvetica-normal';
+    color: white;
+}
+.descricaocom{
+    margin: 12px 5px 5px 690px;
+    font-family: 'coolvetica-normal';
+    color: white;
+}
+ 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    transition: opacity 0.3s ease;
+ 
+}
+
+.modal-content{
+    position: fixed;
+    float: left;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* display: block; */
+    background-color: var(--preto);
+    padding: 20px;
+    max-width: 700px;
+    transition: transform 0.3s ease;
+    
+}
+
+
+#modal-image{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 235px;
+    border-radius: 20px;
+    margin: 1% auto;
+}
+
+#caption{
+    color: white;
+    font-family: 'coolvetica-normal';
+    text-align: center;
+    margin: 20px;
+}
+
+#descricao-modal{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: normal;
+
+}
+.close{
+    position: absolute;
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 5px 5px 5px 5px;
+}
+
+
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rodape{
+    position: absolute;
+    bottom: -555px;
+    width: 100%;
+    height: 4rem;
+    margin: none;
+    padding: none;
+    margin-bottom: 0;
+}
+
+.barra_rodape{
+    background-color: var(--escuro);
+    z-index: 20;
+
+}
+
+.icone_rodape{
+    filter: invert(100%);
+    margin: 15px;
+    width: 20px;
+    float: right;
+    margin-top: 20px;
+}
+
+.icone_rodape:hover{
+    cursor: pointer;
+}
+
+
+#trademark{
+    display: block;
+    font-family: 'coolvetica-normal';
+    color: white;
+    margin: 20px;
+    float: left;
+    text-align: end;
+}
+.codebrew_rodape{
+    margin: auto 50%;
+    display: flex;
+    width: 60px;
+    align-content: center;
+    justify-content: center;
+}
+
+/* nao mexer vai quebrar e puxar o site todo pra esquerda*/
+#cursos{
+    position: relative;
+    text-align: center;
+    color: white;
+    bottom: -350px;
+}
+
+
+.content #h3{
+    position: absolute;
+    color: white;
+    font-family: 'holenvintage';
+    margin: -365px auto 5px 545px;
+    font-size: 30px;
+}
+
+.content #parag{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -295px auto 5px 280px;
+}
+
+#imagem_bloco4{
+    width: 100%;
+    filter: brightness(50%);
+
+}
+
+.botao_curso{
+    width: 145px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 30px;
+    border: white solid 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'coolvetica-normal';
+    margin: -195px 25px 5px 550px;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 1;
+    overflow: hidden;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 30px;
+        z-index: -2;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: var(--escuro);
+        border-radius: 30px;
+        transition: all .3s;
+        z-index: -1;
+    }
+    &:hover{
+        color: #fff;
+        &:before{
+            width: 100%;
+        }
+    }
+
+}
+#gamejam-hack{
+    position: relative;
+    bottom: -540px;
+}
+#bloco5{
+    background-color: black;
+    position: relative;
+}
+
+#image-container{
+   display: flex;
+   overflow: hidden;
+}
+#image-container .gj-bloco5 img,
+#image-container .hack-bloco5 img{
+    filter: brightness(40%);
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+#image-container .gj-bloco5, 
+#image-container .hack-bloco5{
+    position:relative;
+    overflow: hidden;
+    width: 652px;
+}
+
+#image-container .gj-bloco5:hover img, #image-container .hack-bloco5:hover img {
+    transform: scale(1.05);
+}
+
+.gj-bloco5 h2{
+    position: absolute;
+    color: white;
+    font-family: 'coolvetica-normal';
+    letter-spacing: 2px;
+    font-size: 35px;
+    /* margin: -295px 5px 5px 460px; */
+    top: 230px;
+    left: 71%;
+    text-align: center;
+    transition: left 0.3s ease, transform 0.4s ease;
+}
+.hack-bloco5 h2{
+    position: absolute;
+    color: white;
+    font-family: 'coolvetica-normal';
+    letter-spacing: 2px;
+    font-size: 35px;
+    /* margin: -295px 5px 5px 5px; */
+    top: 230px;
+    right: 70%;
+    text-align: center;
+    transition: right 0.3s ease, transform 0.4s ease;
+}
+
+.hover-content {
+    position: absolute;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+.gj-bloco5:hover .hover-content {
+    opacity: 1;
+    top: 220px;
+    right: 30px; /* Position content in the Hackathon section */
+    left: auto;
+}
+.hack-bloco5:hover .hover-content {
+    opacity: 1;
+    top: 220px;
+    left: 20px; /* Position content in the Game Jam section */
+    right: auto;   
+}
+
+#image-container:hover .gj-bloco5,
+#image-container:hover .hack-bloco5 {
+    opacity: 0; /* Apply dimming effect */
+    transition: opacity 0.3s ease;
+}
+
+#image-container .gj-bloco5:hover,
+#image-container .hack-bloco5:hover {
+    opacity: 1; /* Bring hovered image back to full opacity */
+}
+
+/* bloco que muda as coisa de lugar uhul */
+.gj-bloco5:hover h2{
+    left: 35%;
+    transform: translateY(-120px);
+}
+
+.hover-content button{
+    width: 145px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 40px;
+    border: white solid 3px;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'coolvetica-normal';
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
+.gj-bloco5 .hover-content button{
+    opacity: 0;
+}
+
+.hack-bloco5:hover h2{
+    right: 35%;
+    transform: translateY(-120px);
+}
+.hack-bloco5 .hover-content button{
+    opacity: 0;
+}
+.gj-bloco5:hover button,
+.hack-bloco5:hover button{
+    opacity: 1;
+}
+
+.hover-content button:hover{
+    color: black;
+    background-color: white;
+    transition: color 0.4s ease-in-out, background-color 0.5s ease-in-out;
+    
+
+}
+
+/*  */
